@@ -1487,11 +1487,11 @@ only screen and (                min-resolution: 2dppx) {
   background-color: #000000;
 }
 
-.intro__info{
+.intro__info--faq{
   position: relative;
 }
 
-.intro__info::before{
+.intro__info--faq::before{
   position: absolute;
   z-index: 4;
   top: -75px;
