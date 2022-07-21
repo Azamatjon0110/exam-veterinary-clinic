@@ -131,7 +131,7 @@ body{
   color: var(--adr-color);
 }
 
-.inner-wrapper__maplink, .footer-box__maplink{
+.inner-wrapper__maplink, .footer-box__maplink, .intro__con-maplink{
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -1178,7 +1178,8 @@ only screen and (                min-resolution: 2dppx) {
   margin-bottom: 16px;
 }
 
-.footer-box__link{
+.footer-box__link, .intro__conlink{
+  display: block;
   color: var(--adr-color);
   transition: 0.3s ease;
 }
@@ -1617,14 +1618,123 @@ only screen and (                min-resolution: 2dppx) {
   padding-bottom: 270px;
   background-image: url("../images/faq-perrot.png");
   background-repeat: no-repeat;
-  background-size: 645px 652px;
-  background-position: calc(50% + 550px) calc(50% + 360px);
+  background-size: 654px 652px;
+  background-position: calc(50% + 500px) calc(50% + 360px);
 }
 
 .intro__text--faq{
   margin-bottom: 35px;
 }
 
+/* contact page */
+
+.intro__info--contact{
+  position: relative;
+}
+
+.intro__info--contact::before{
+  position: absolute;
+  z-index: 2;
+  top: -100px;
+  left: 750px;
+  width: 673px;
+  height: 568px;
+  background-image: url("../images/bobik.png");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.intro__text--con{
+  margin-bottom: 117px;
+}
+
+.intro__con-list{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 112px;
+}
+
+.intro__con-item{
+  width: 153px;
+}
+
+.intro__con-item:not(:last-child){
+  margin-right: 118px;
+}
+
+.intro__con-item:nth-child(1)::before{
+  display: inline-block;
+  width: 73px;
+  height: 73px;
+  margin-bottom: 30px;
+  background-image: url("../images/location.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.intro__con-item:nth-child(2)::before{
+  display: inline-block;
+  width: 77px;
+  height: 72px;
+  margin-bottom: 26px;
+  background-image: url("../images/contact-calendar.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.intro__con-item:nth-child(3)::before{
+  display: inline-block;
+  width: 42px;
+  height: 73px;
+  margin-bottom: 27px;
+  background-image: url("../images/contact-phone.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.intro__address{
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--adr-color);
+}
+
+.intro__contime{
+  display: block;
+}
+
+.search{
+  padding-top: 395px;
+  background-image: url("../images/pets.png");
+  background-repeat: no-repeat;
+  background-position: right calc(50% + 68px);
+  text-align: center;
+
+}
+
+.map-box{
+  width: 1536px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.map-box__frame{
+  width: 943px;
+  height: 466px;
+  border: none;
+}
+.search__title{
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: var(--adr-color);
+}
 /* modal */
 
 .modal{
